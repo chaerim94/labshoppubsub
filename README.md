@@ -20,9 +20,9 @@ cd /bin
 ## Run the backend micro-services
 See the README.md files inside the each microservices directory:
 
-- order
 - inventory
 - delivery
+- order
 
 
 ## Run API Gateway (Spring Gateway)
@@ -32,10 +32,6 @@ mvn spring-boot:run
 ```
 
 ## Test by API
-- order
-```
- http :8088/orders id="id" productId="productId" qty="qty" customerId="customerId" amount="amount" 
-```
 - inventory
 ```
  http :8088/inventories id="id" stock="stock" 
@@ -43,6 +39,10 @@ mvn spring-boot:run
 - delivery
 ```
  http :8088/deliveries id="id" orderId="orderId" productId="productId" qty="qty" status="status" 
+```
+- order
+```
+ http :8088/orders id="id" productId="productId" qty="qty" customerId="customerId" amount="amount" 
 ```
 
 
